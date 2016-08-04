@@ -1,0 +1,56 @@
+A strip of paper two to the power of n sequentially numbered unit squares long
+is placed on a table in such a way that its left-most square, numbered as 1,
+is fixed at origin in the XOY plane.
+
+The strip then undergoes 'n' like transformations as follows:
+
+- the strip is folded in half upward and its current right-most square is
+rotated counterclockwise 180 degrees in the ZOX plane about the current
+strip's middle until it is placed on top of the strip's left-most square
+
+After the n-th fold is complete, the strip is one square-long along the OX axis
+with two to the power of n squares piled one on top of the other along the OZ
+axis*:
+
+- if n = 1 fold is performed then the initial length of the strip is 2 and at
+the end of the transformation the distribution of numbers in a vertical
+direction is:
+
+1 2
+
+- if n = 2 folds are performed then the initial length of the strip is 4 and
+at the end of the transformation the distribution of numbers in a vertical
+direction is:
+
+1 4 3 2
+
+- for n = 3 folds:
+
+1 8 5 4 3 6 7 2
+
+- for n = 4 folds:
+
+1 16 9 8 5 12 13 4 3 14 11 6 7 10 15 2
+
+- for n = 5 folds:
+
+1 32 17 ...
+
+and so on.
+
+- what type(s) of toy model emulating the actual folding process can be thought
+of?
+
+- given a square in the original strip numbered with the current year, what will
+its position be in the folded strip after 30 folds?  
+
+Read the related article on my website:
+ romanyandronov.elementfx.com
+  Basic Approaches
+   Rearrangement
+    Strip Teez
+
+*
+Another way to obtain the new sequence of numbers is as follows: holding the
+folded strip by its 'book' end, cut all the forward facing folds, thumb through
+the 'pages' to reveal their numbers.
