@@ -82,19 +82,19 @@ main( int argc, char* argv[] )
 	half = x >> 1;
 
 	/*
+	  Reverse the bits in 'half'
+	 */
+	xprime = reverseBits( half, nFolds );
+
+	/*
 	  Flip the bits if 'x' is odd
 	*/
 	if ( x % 2 )
 	{
-		half = ~half;
+		xprime = ~xprime;
 		mask = mkMask( nFolds );
-		half = half & mask;
+		xprime = xprime & mask;
 	}
-
-	/*
-	  Reverse the bits in 'half'
-	 */
-	xprime = reverseBits( half, nFolds );
 
 
 	printf( "x'(%u, %u) = %u\n",
